@@ -1,0 +1,28 @@
+﻿<div ng-controller="listController">
+    
+   <h> Number of pages:</h> 
+    <p>
+  <input name="page" type="number" ng-model="page" />
+    </p>
+   <h> Items Per Page: </h>
+    <p>
+        <input name="perPage" type="number" ng-model="perPage" />
+    </p>
+    <p>
+    <button class="col-md-2 btn btn-default" ng-click="getPage()">
+        Update Page
+    </button>
+    </p>
+    <h1> &nbsp; </h1>
+    <p>
+
+        <table>
+            <tr ng-repeat="campaign in campaigns">
+                <td>{{campaign.vendor}}</td>
+                <td>
+                    <a href="#!/details/{{campaign.id}}">Details</a>
+                </td>
+            </tr>
+        </table>
+    </p>
+</div>

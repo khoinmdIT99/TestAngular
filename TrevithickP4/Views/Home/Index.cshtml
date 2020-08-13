@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+    <script src="~/atCampaign/scripts/thecampaign.js"></script>
+    <script src="~/atCampaign/scripts/detailscontroller.js"></script>
+    <script src="~/atCampaign/scripts/listcontroller.js"></script>
+    <script src="~/atCampaign/scripts/campaignService.js"></script>
+
+}
+<h2>Campaign</h2>
+
+
+<div data-ng-app="TheCampaign">
+    <ng-view></ng-view>
+</div>
+
